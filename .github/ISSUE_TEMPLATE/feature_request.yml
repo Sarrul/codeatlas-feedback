@@ -6,26 +6,26 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for suggesting a feature!
+        Thank you for your suggestion.
 
   - type: textarea
     id: problem
     attributes:
-      label: What problem does this solve?
-      description: Is your feature request related to a problem?
+      label: What problem does this solve? / Ямар асуудлыг шийдэх вэ?
+      description: Describe the problem clearly. / Асуудлыг тодорхой тайлбарлана уу.
     validations:
       required: true
 
   - type: textarea
     id: solution
     attributes:
-      label: Proposed solution
-      description: Describe your proposed solution.
+      label: Proposed solution / Санал болгож буй шийдэл
+      description: How should it work? / Яаж ажиллах ёстой гэж бодож байна?
     validations:
       required: true
 
   - type: textarea
-    id: alternatives
+    id: additional
     attributes:
-      label: Alternatives considered
-      description: Any alternative solutions?
+      label: Additional context / Нэмэлт мэдээлэл
+      description: Screenshots or extra explanation (optional) / Зураг эсвэл нэмэлт тайлбар (заавал биш)

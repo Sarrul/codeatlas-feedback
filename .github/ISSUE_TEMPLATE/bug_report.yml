@@ -6,38 +6,50 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for reporting a bug! Please fill out the information below.
+        Thank you for reporting a bug.
+
+        Please fill out the form below so we can reproduce and fix the issue faster.
+        Доорх мэдээллийг бөглөснөөр бид асуудлыг хурдан илрүүлж засах боломжтой болно.
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Before submitting / Илгээхээс өмнө
+      options:
+        - label: I searched existing issues / Өмнө нь мэдээлэгдсэн эсэхийг шалгасан
+          required: true
+        - label: I am using the latest version / Сүүлийн хувилбарыг ашиглаж байгаа
+          required: false
 
   - type: input
     id: vscode-version
     attributes:
-      label: VSCode Version
-      placeholder: e.g. 1.87.0
-    validations:
-      required: true
-
-  - type: textarea
-    id: description
-    attributes:
-      label: Describe the bug
-      description: What happened?
+      label: VSCode Version / VSCode хувилбар
+      placeholder: e.g. 1.88.0
     validations:
       required: true
 
   - type: textarea
     id: steps
     attributes:
-      label: Steps to reproduce
-      description: Step-by-step instructions to reproduce the issue
+      label: Steps to reproduce / Энэ асуудалыг дахин гаргахын тулд хийх үйлдлүүд алхам алхамаар
       placeholder: |
-        1. Open project
-        2. Click Roadmap button
+        1. Open project 
+        2. Click Roadmap button 
         3. ...
     validations:
       required: true
 
   - type: textarea
+    id: screenshots
+    attributes:
+      label: If possible provide a screenshots, it will be very helpful to identify the bug (Optional) / нэмэлтээр зураг оруулж өгвөл асуудлыг олход их тус болно.(Заавал биш)
+      description: |
+        drag and drop a screenshot here.
+        энд screenshot оруулна уу.
+
+  - type: textarea
     id: expected
     attributes:
-      label: Expected behavior
-      description: What did you expect to happen?
+      label: Expected behavior / Хүлээгдэж байсан үр дүн
+      description: What did you expect to happen? / Ямар үр дүн гарах ёстой байсан бэ?
